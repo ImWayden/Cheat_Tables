@@ -1,0 +1,53 @@
+  Game   : HellIsOthers_launcher.exe
+  Version: 
+  Date   : 2023-07-08
+  Author : wayden
+
+  This script allocate a pointer to the adress of the last item you moved in your inventory wich basicaly makes you able to modifiy the data of any items like quantity, itemref, durability etc...
+  [FindItem]+08 is a 4 bytes for quantity [FindItem]+C is a 8 bytes for the hash code of the actual item, replacing it by the hash of an other item will transform it , 
+  [FindItem]+04 is a 4 bytes you can use to modify weapon durability setting it to 0 will give you an infinite durabilty item
+
+
+[ENABLE]
+
+aobscanmodule(FindMovItem,GameAssembly.dll,8B 48 08 8B 85 C8 00 00 00) // should be unique
+alloc(newmem,$1000,FindMovItem)
+alloc(FindItem,4)
+
+registerSymbol(FindItem)
+
+label(code)
+label(return)
+
+FindItem:
+  dd 0
+
+newmem:
+
+code:
+  mov [FindItem],rax
+  mov ecx,[rax+08]
+  mov eax,[rbp+000000C8]
+  jmp return
+
+FindMovItem:
+  jmp newmem
+  nop
+  nop
+  nop
+  nop
+return:
+registersymbol(FindMovItem)
+
+[DISABLE]
+
+FindMovItem:
+  db 8B 48 08 8B 85 C8 00 00 00
+
+unregistersymbol(FindMovItem)
+unregistersymbol(FindItem)
+dealloc(newmem)
+dealloc(FindMovItem)
+
+
+// ORIGINAL CODE - INJECTION POINT: EOSSDK-Win64-Shipping.dll+75BFDC

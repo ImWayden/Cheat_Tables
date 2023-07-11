@@ -1,0 +1,35 @@
+  Game   : Hell Is Others
+  Version: 
+  Date   : 2023-07-06
+  Author : wayden
+
+  You can eat as much as you want it won't gives any satiety
+
+
+[ENABLE]
+
+aobscanmodule(nosatiety,GameAssembly.dll,20 5F C3 CC CC CC CC CC CC CC CC CC CC 48 89 5C 24 10 48 89 6C 24 18 48 89 74 24 20 57) // should be unique
+alloc(newmem,$1000)
+
+label(code)
+label(return)
+
+newmem:
+
+code:
+  ret
+
+nosatiety+0D:
+  jmp newmem
+return:
+registersymbol(nosatiety)
+
+[DISABLE]
+
+nosatiety+0D:
+  db 48 89 5C 24 10 48 89 6C 24 18 48 89 74 24 20 57
+
+unregistersymbol(nosatiety)
+dealloc(newmem)
+
+// ORIGINAL CODE - INJECTION POINT: Quantum.UsableItemData.ProcessSatietyOnUse

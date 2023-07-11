@@ -1,0 +1,27 @@
+  Game   : HellIsOthers_launcher.exe
+  Version: 
+  Date   : 2023-07-07
+  Author : wayden
+
+  This script remove bloodcount when adding fertilizer giving the possibility to add an infinite amount and making op bullet 
+  BUT for some reason bullets aren't spawning when adding every fertilizer at maximum amount, and you'll be left with a bugegd useless vases 
+  i don't know why i happens and what is the limit   
+
+[ENABLE]
+
+aobscanmodule(NoBloodRequired,GameAssembly.dll,4C 89 44 24 18 48 89 54 24 10 48 89 4C 24 08 55 56 57 41 54 41 55 41 56 41 57 48 81 EC 90 01 00 00 48 8D 6C 24 30 48 89 9D B8 01 00 00 49 8B F8 48 8B DA 4C 8B E9 80 3D 66 B2 B0 02 00) // should be unique
+
+NoBloodRequired:
+  mov eax,01
+  ret
+registersymbol(NoBloodRequired)
+
+[DISABLE]
+
+NoBloodRequired:
+  db 4C 89 44 24 18 48
+
+unregistersymbol(NoBloodRequired)
+dealloc(newmem)
+
+// ORIGINAL CODE - INJECTION POINT: Quantum.Vase.GetTotalRequiredBlood

@@ -1,0 +1,37 @@
+  Game   : Hell Is Others
+  Version: 
+  Date   : 2023-07-06
+  Author : wayden
+
+  This script removes Recoil so your weapon always shoot straight to where yoru aiming 
+
+
+[ENABLE]
+
+aobscanmodule(norecoil,GameAssembly.dll,7E FF CC CC CC CC CC CC CC CC 48 89 74 24 18) // should be unique
+alloc(newmem,$1000,norecoil)
+
+label(code)
+label(return)
+
+newmem:
+
+code:
+  mov eax,00
+  ret
+
+norecoil+0A:
+  jmp newmem
+return:
+registersymbol(norecoil)
+
+[DISABLE]
+
+norecoil+0A:
+  db 48 89 74 24 18
+
+unregistersymbol(norecoil)
+dealloc(newmem)
+
+
+// ORIGINAL CODE - INJECTION POINT: Quantum.BulletSystem.CalculateRecoilExtraRotation

@@ -1,0 +1,37 @@
+Game   : Hell Is Others
+  Version: 
+  Date   : 2023-07-07
+  Author : wayden
+
+  This script let you sleep without having watered the bonzai i causes bug during tutorial soft locking you inside the hub haven't tried if it works correctly after 
+
+
+[ENABLE]
+
+aobscanmodule(BonzaiNoWater,GameAssembly.dll,CC CC CC CC CC 48 89 5C 24 08 48 89 7C 24 10 55 48 8D AC 24 20) // should be unique
+alloc(newmem,$1000)
+
+label(code)
+label(return)
+
+newmem:
+
+code:
+  ret
+  //mov [rsp+08],rbx
+  //jmp return
+
+BonzaiNoWater+05:
+  jmp newmem
+return:
+registersymbol(BonzaiNoWater)
+
+[DISABLE]
+
+BonzaiNoWater+05:
+  db 48 89 5C 24 08 48 89 7C 24 10 55 48 8D AC 24 20
+
+unregistersymbol(BonzaiNoWater)
+dealloc(newmem)
+
+// ORIGINAL CODE - INJECTION POINT: SleepingManager.IsBonsaiFullyWatered

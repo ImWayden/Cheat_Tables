@@ -1,0 +1,53 @@
+Game   : HellIsOthers_launcher.exe
+  Version: 
+  Date   : 2023-07-07
+  Author : wayden
+
+  This script makes Players Entity heal to max hp when receving damages, wich means you can't kill players and nothing can kill you but you can kill any other entity, 
+  i haven't found any way to differenciate you from other playerEntity and btw having it activated will desync you from others players 
+
+
+[ENABLE]
+
+aobscanmodule(Invicibleonehitkill,GameAssembly.dll,49 89 44 24 10 4D) // should be unique
+alloc(newmem,$1000,Invicibleonehitkill)
+alloc(EntityRef,4)
+registersymbol(EntityRef)
+label(code)
+label(originalcode)
+label(return)
+
+EntityRef:
+  dd 0
+
+newmem:
+
+code:
+  mov [EntityRef], r12
+  cmp [r12+8],0xA082CD25
+  jne originalcode
+  mov rax,[r12+20]
+  mov [r12+10],rax
+  jmp return
+
+originalcode:
+  mov [r12+10],rax
+  jmp return
+
+Invicibleonehitkill:
+  jmp newmem
+return:
+registersymbol(Invicibleonehitkill)
+
+[DISABLE]
+
+Invicibleonehitkill:
+  db 49 89 44 24 10 4D
+
+unregistersymbol(EntityRef)
+unregistersymbol(Invicibleonehitkill)
+dealloc(newmem)
+dealloc(EntityRef)
+
+
+// ORIGINAL CODE - INJECTION POINT: GameAssembly.dll+BFEBEC

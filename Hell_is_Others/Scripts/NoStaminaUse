@@ -1,0 +1,35 @@
+Game   : Hell Is Others
+  Version: 
+  Date   : 2023-07-06
+  Author : wayden
+
+  You'll never use or win stamina anymore, it's basicaly infinite stamina
+
+
+[ENABLE]
+
+aobscanmodule(InfStam,GameAssembly.dll,CC 48 89 7C 24 18 4C 89 74 24 20 41 57 48 83 EC 30 80) // should be unique
+alloc(newmem,$1000)
+
+label(code)
+label(return)
+
+newmem:
+
+code:
+  ret
+
+InfStam+01:
+  jmp newmem
+return:
+registersymbol(InfStam)
+
+[DISABLE]
+
+InfStam+01:
+  db 48 89 7C 24 18 4C 89 74 24 20 41 57 48 83 EC 30 80
+
+unregistersymbol(InfStam)
+dealloc(newmem)
+
+// ORIGINAL CODE - INJECTION POINT: Quantum.StaminaSystem.Quantum.ISignalRequestStaminaChange.RequestStaminaChange

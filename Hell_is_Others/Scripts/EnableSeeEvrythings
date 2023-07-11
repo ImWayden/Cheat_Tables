@@ -1,0 +1,31 @@
+  Game   : Hell Is Others
+  Version: 
+  Date   : 2023-07-07
+  Author : wayden
+
+  This script just removes the view limitation you see "throught" walls and at 360° around your character kinda op 
+  You have to activate it before launching a match , it activates on CharacterSpawn and won't work if activated after
+
+[ENABLE]
+
+aobscanmodule(SeeEverythings,GameAssembly.dll,33 D2 48 8B CB E8 4C EE FF FF) // should be unique
+
+label(return)
+
+SeeEverythings:
+  mov dl,01
+  mov rcx,rbx
+  call PlayerCharacter.EnableSeeEverything
+return:
+registersymbol(SeeEverythings)
+
+[DISABLE]
+
+SeeEverythings:
+  db 33 D2 48 8B CB E8 4C EE FF FF
+
+unregistersymbol(SeeEverythings)
+dealloc(newmem)
+
+
+// ORIGINAL CODE - INJECTION POINT: GameAssembly.dll+63AC9A

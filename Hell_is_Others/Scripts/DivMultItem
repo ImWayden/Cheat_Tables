@@ -1,0 +1,25 @@
+Game   : HellIsOthers_launcher.exe
+  Version: 
+  Date   : 2023-07-08
+  Author : wayden
+
+  This script makes you able to split items without spliting so if you split a pile of 10 you'll end with a pile of 15 and a pile of 5, 
+  but it's incomplete so it work only when spliting to an empty space of your inventory
+
+[ENABLE]
+
+aobscanmodule(DivMultItem,GameAssembly.dll,29 41 08 48 8B 1D DB 69 1D 02) // should be unique
+alloc(newmem,$1000,DivMultItem)
+
+DivMultItem:
+  add [rcx+08],eax
+registersymbol(DivMultItem)
+
+[DISABLE]
+
+DivMultItem:
+  db 29 41 08 48 8B 1D DB 69 1D 02
+
+unregistersymbol(DivMultItem)
+
+// ORIGINAL CODE - INJECTION POINT: GameAssembly.dll+F5C0A3

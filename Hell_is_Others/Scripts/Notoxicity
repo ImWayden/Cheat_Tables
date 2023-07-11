@@ -1,0 +1,37 @@
+Game   : Hell Is Others
+  Version: 
+  Date   : 2023-07-06
+  Author : wayden
+
+  This script Removes the method adding toxicity when using an item (pills or champs) so you aren't restricted to a normal build but 
+  i haven't found how i could removes stats limits
+
+
+[ENABLE]
+
+aobscanmodule(notoxicity,GameAssembly.dll,48 89 6C 24 10 48 89 74 24 18 48 89 7C 24 20 41 56 48 83 EC 30 80 3D 2A) // should be unique
+alloc(newmem,$1000)
+
+label(code)
+label(return)
+
+newmem:
+
+code:
+  ret
+
+notoxicity:
+  jmp newmem
+return:
+registersymbol(notoxicity)
+
+[DISABLE]
+
+notoxicity:
+  db 48 89 6C 24 10 48 89 74 24 18 48 89 7C 24 20 41 56 48 83 EC 30 80 3D 2A
+
+unregistersymbol(notoxicity)
+dealloc(newmem)
+
+
+//ORIGINAL CODE - INJECTION POINT: Quantum.UsableItemData.ProcessToxicityOnUse

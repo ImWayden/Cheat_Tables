@@ -1,0 +1,35 @@
+  Game   : Hell Is Others
+  Version: 
+  Date   : 2023-07-07
+  Author : wayden
+
+  This script makes you use items instantly (food/med) haven't tried with mines
+
+[ENABLE]
+
+aobscanmodule(InstantFoodMedUse,GameAssembly.dll,F5 FF CC CC CC CC CC CC CC CC CC CC CC 48 89 5C 24 10) // should be unique
+alloc(newmem,$1000,InstantFoodMedUse)
+
+label(code)
+label(return)
+
+newmem:
+
+code:
+  mov eax, 1
+  ret
+
+InstantFoodMedUse+0D:
+  jmp newmem
+return:
+registersymbol(InstantFoodMedUse)
+
+[DISABLE]
+
+InstantFoodMedUse+0D:
+  db 48 89 5C 24 10
+
+unregistersymbol(InstantFoodMedUse)
+dealloc(newmem)
+
+// ORIGINAL CODE - INJECTION POINT: Quantum.InventoryItemArchetype.GetUseTime

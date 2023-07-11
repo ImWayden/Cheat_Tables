@@ -1,0 +1,217 @@
+
+_________________________________
+			explosif
+
+Grenade         = 11B0DC51F6041006
+SmokeGrenade    = 054F28B28C9A1463
+Glue Grenade    = 1BD150CC8ED44E96
+Molotov         = 324D2B90EBEBFC79
+Claymore        = 0DBF83BCEAC82945
+Mine 1          = 38E75D4D0A3BB3D0
+Mine 2          = 1E3EAF381233B887
+BearTrap        = 28C9DE5E30285DD6
+FlashBang       = 1C590094BC39A3F6
+_________________________________
+		   weapon
+
+Katana          = 3E119A0492FCEA53
+Batte           = 14512B70EF469A01
+Knuckle         = 33ECBC26DD3D1525
+					
+Mr Grant        = 006EA46291601B02
+Mr Grant+       = 19C839215DE4E9D5
+
+Mr Chapman      = 18CED4139502D65B
+Mr Chapman+     = 1C29BD63BDAB4C50
+
+Mr Whatts       = 15B4C0B7553311DE
+Mr Whatts+      = 24E2F6A219D5F9E9
+
+Sir ArmStrong   = 1911752306791B92
+Sir Armstrong+  = 27AEEE8C17CDD49D
+
+Sir Morris      = 16357198AFF2D00F
+Sir Morris+     = 18023023ED5CACF9
+
+Sir lloyd       = 0017673C6E2CC95E
+Sir lloyd+      = 2E97C749E5F6B0B0
+
+Mrs Bell        = 1032BD23ABC34732
+Mrs Bell+       = 1A48A1160B966B3D
+
+Mrs Kelly       = 2F5582101CCA2D23
+Mrs Kelly+      = 0F3F894F3F90D9C4
+
+Mrs Powell      = 0458F5F1939512A3
+Mrs Powell+     = 278A390B132C1E15
+Mrs Powell+     = 11210B5C7F14F03B
+
+Miss Murphy     = 39822B8A5AD4852E
+Miss Murphy+    = 359A533CAA384677
+
+Miss Payne      = 05EAF0C6B1A6C2AB
+Miss Payne+     = 3E119A0492FCEA53
+
+Miss Harvey     = 0EF2DC33C05993EF
+Miss Harvey+    = 0341211DF30DC026
+Miss Harvey++   = 3A5F73D53DCCCDDC
+
+Lady Butler     = 27C93AA2A5158363	
+Lady Butler+    = 16EFCD480C016FCA
+Lqdy Butler++   = 3F096CF1D78708B0
+
+Lady Saunders   = 3C900E47083152AB
+Lady Saunders+  = 154DC3B10B464ED7
+Lady Saunders++ =
+
+Lady Marshall   = 184D9032FB7DCBE0
+Lady Marshall+  = 3E5A7B9D1D5C252B
+
+Dr Fisher       = 030D446509B1A335
+Dr Fisher+      = 0439B01F1977C10B
+__________________________________
+		Fertilizer
+Nageoire        = 30C242155E1256ED
+Bones           = 06852F81BAC1B70D
+Plume           = 2218295801CB6826
+Vessie          = 35C0D34979A4AFB0
+Brain           = 3C8C561E8CC52DF1
+Tentacle        = 18A1CE2D88F6EC14
+Teeth           = 142AC396D4E9C691
+tong            = 18E76A7446FEFA83
+claw            = 262D0C425F76B399
+eye             = 1A6EEE253C73557A
+
+Damages         = 3FCBDF4202D9BE1F
+Vit/rota        = 18D12C4F3988813B
+Speed           = 11455ACF7E51C29B
+Recul           = 0786EE46D3EF5133
+Bleed Chance    = 0EFF8DB656E690EB
+Deaf  Chance    = 1640F3420EA1BB35
+Blind Chance    = 203727EC620EADFE
+Crit  Chance    = 2DBB2DB46AA3AFAD
+Frag            = 2C4756931A1510E6
+Bounce          = 2D10852784A08662
+__________________________________
+		Blood Source
+
+CoackRoach      = 00BBCE5155029F97
+Heart 1         = 28A469410C570F8A
+Heart Rotten 1  = 1A11B46E15223499
+Heart 2         = 279E29DF7D8B85CE
+Heart Rotten 2  = 1B8E91419F2E3D42
+Heart 3         = 335EB362EF17DBB33 
+Heart Rotten 3  = 0D441F45A601C092
+
+human hearth    = 2949CD8AEAD4662B
+human Rotten    = 1F276E7BA26DF362
+
+Own Blood Botl  = 3FDD42AF17D5D8D4
+Blood bottle 1  = 3517865D004E6839
+Blood Bottle 2  = 1914FE42CD927056
+Blood Bottle 3  = 0445C222961AAC6E
+Blood Bag       = 29474709A0A956C5
+________________________________
+		     Heal
+
+Energy Seringe  = 0CB20E33CA98F318
+Health Seringe  = 173C558987FFC7F4
+Bandage         = 1F2673F0FC4E9F0D
+Health Green    = 1BD2796D4B9E5958
+Health Blue     = 28A3E685F6A5C5F8
+Health Purple   = 3431FB3509217C5D
+
+__________________________________
+      Pills   &   Champs
+
+Sight           = 170579C61AC7EF6D
+Hearing         = 2639FD5447E9238D
+Search          = 22941BC43D517677
+Health          = 25002A4E737F2F22
+Endu            = 3A1C85B7FA45097D
+
+Oftatus         = 3C3811B9A91ED29F
+Somoftus        = 084A6F3D7FE51DCF
+Somatus         = 0FF2FD45960A585C
+Pnerihnus       = 2225F5019C436B01
+Tachitus        = 1B052127568555FC
+Pnetus          = 0581B6104AC072C0
+Pnetatus        = 26CCF26AB64BD8DF
+Rhinotus        = 1302A1268CF7E3FA
+Tacofus         = 241BA5D282D37695
+__________________________________
+			Food
+
+Vodka           = 3F2C71765E3E30B1
+Absynthe        = 1911D2B6A5DA4A3C
+EnergyDrink 1  = 2193170CF1340835
+EnergyDrink 2  = 1D891885D67C99D0
+
+falafel         = 0EC4F50F837B1DC5
+Choclate bar    = 3FF1714E5EC85810
+Chips           = 075DFD28EB551A07
+beignet         = 109EC16D9B74B39C
+cupcake         = 373A4AA1BBC8F208
+food can        = 11BD5B0D184A82BD
+taco            = 3B1AACFDCEA27474
+cake            = 1CA4E03175E9F0E5
+__________________________________
+			Treasures
+
+Cash            = 2CB3B1FC0BC103F6
+Jewel Ear       = 0F5F968A97EC3528
+Jewel Bracelet  = 22210E71A56C8C06
+Jewel Clock     = 31ED9795E7F05A36
+Jewel Ring      = 1EEF7E107B0C7CD4
+Jewel NeckLace  = 1C4F28522E553D24
+Jewel Old Coin  = 0F44C47BD065B502
+
+Theatre Key     = 1BA252A22FC47108
+Castle Key      = 05CFA765D6659FB8
+
+Church Key      = 13E84E1643E0A367
+__________________________________
+            Tools
+
+Clous           = 215B28EAC18B55DF
+Boulon          = 0480BBBC8468A18B
+clé anglaise    = 1CF1A0EC8D585D5D
+tourne vis      = 3172AC1A49642D5B
+saw             = 04598F8AE08388DC
+Burin           = 0968DB8349F099CC
+
+__________________________________
+			Office
+
+ciseaux         = 1AADBD18D3CBDB2B
+pencil          = 0877C1D6D4FD8BB5
+ink             = 0818083BB4FBB8F3
+paper           = 0A1C1E4BFC7345A7
+mètre           = 2D065FA99A77105E
+rubber          = 14303CB3D4689DD7
+glue            = 1F4D445905B60B39
+Stylo plume     = 0CF90B6578D977B2
+__________________________________
+		   Steel
+
+Knife           = 11386089AF95C04C
+Fork            = 182506AABE4105BC
+Spoon           = 21163F88423BBCA3
+vis             = 394FDD5A55B7990B
+Ressort         = 24762C37AD603420
+
+__________________________________
+		   electronique
+
+remote          = 1D9220EDB5800F64
+pile            = 38558DE16C0F51C3
+puce elec       = 11878E12F125161E
+ampoule         = 32692B1801902193
+Harddrive       = 397688B38BF3F047
+cable           = 3033516321F967E3
+Photocelule     = 0B1C3287DF4DA85B
+
+__________________________________
+			Bullet
+
+Special         = 138E2E30BA2C8857
