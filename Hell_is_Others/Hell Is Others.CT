@@ -8,7 +8,7 @@
       <AssemblerScript>{ Game   : Hell Is Others
   Version: 
   Date   : 2023-07-06
-  Author : minat
+  Author : wayden
 
   This script does blah blah blah
 }
@@ -86,7 +86,7 @@ Quantum.HealthSystem.Quantum.ISignalRequestHealthChange.RequestHealthChange: 40 
           <AssemblerScript>{ Game   : HellIsOthers_launcher.exe
   Version: 
   Date   : 2023-07-07
-  Author : minat
+  Author : wayden
 
   This script does blah blah blah
 }
@@ -144,7 +144,7 @@ GameAssembly.dll+67114A: 48 81 EC 90 01 00 00  - sub rsp,00000190
           <AssemblerScript>{ Game   : Hell Is Others
   Version: 
   Date   : 2023-07-07
-  Author : minat
+  Author : wayden
 
   This script does blah blah blah
 }
@@ -220,7 +220,7 @@ GameAssembly.dll+A1E132: 48 8D 0D 3F 70 75 02     - lea rcx,[GameAssembly.dll+31
           <AssemblerScript>{ Game   : Hell Is Others
   Version: 
   Date   : 2023-07-06
-  Author : minat
+  Author : wayden
 
   This script does blah blah blah
 }
@@ -289,7 +289,7 @@ GameAssembly.dll+66A787: 48 8D 0D 62 D2 B0 02  - lea rcx,[GameAssembly.dll+31779
           <AssemblerScript>{ Game   : Hell Is Others
   Version: 
   Date   : 2023-07-07
-  Author : minat
+  Author : wayden
 
   This script does blah blah blah
 }
@@ -358,7 +358,7 @@ GameAssembly.dll+63ACCA: 0F 84 17 02 00 00     - je GameAssembly.dll+63AEE7
           <AssemblerScript>{ Game   : Hell Is Others
   Version: 
   Date   : 2023-07-06
-  Author : minat
+  Author : wayden
 
   This script does blah blah blah
 }
@@ -427,7 +427,7 @@ GameAssembly.dll+66A435: 48 8B EA              - mov rbp,rdx
           <AssemblerScript>{ Game   : Hell Is Others
   Version: 
   Date   : 2023-07-07
-  Author : minat
+  Author : wayden
 
   This script does blah blah blah
 }
@@ -502,7 +502,7 @@ GameAssembly.dll+BBFDD6: 48 8D 0D 9B 88 51 02  - lea rcx,[GameAssembly.dll+30D86
           <AssemblerScript>{ Game   : Hell Is Others
   Version: 
   Date   : 2023-07-06
-  Author : minat
+  Author : wayden
 
   This script does blah blah blah
 }
@@ -571,7 +571,7 @@ GameAssembly.dll+C43E09: E8 F2 BE 77 FF        - call GameAssembly.dll+3BFD00
           <AssemblerScript>{ Game   : Hell Is Others
   Version: 
   Date   : 2023-07-06
-  Author : minat
+  Author : wayden
 
   This script does blah blah blah
 }
@@ -641,7 +641,7 @@ GameAssembly.dll+BDD458: 4C 8B FA              - mov r15,rdx
           <AssemblerScript>{ Game   : Hell Is Others
   Version: 
   Date   : 2023-07-06
-  Author : minat
+  Author : wayden
 
   This script does blah blah blah
 }
@@ -711,7 +711,7 @@ Quantum.Weapon.GetWeaponReloadTime: 48 89 5C 24 08        - mov [rsp+08],rbx
           <AssemblerScript>{ Game   : HellIsOthers_launcher.exe
   Version: 
   Date   : 2023-07-07
-  Author : minat
+  Author : wayden
 
   This script does blah blah blah
 }
@@ -837,7 +837,7 @@ GameAssembly.dll+BFEC22: 48 8B D7                 - mov rdx,rdi
           <AssemblerScript>{ Game   : HellIsOthers_launcher.exe
   Version: 
   Date   : 2023-07-08
-  Author : minat
+  Author : wayden
 
   This script does blah blah blah
 }
@@ -959,7 +959,7 @@ EOSSDK-Win64-Shipping.dll+75BFFC: 8B 95 B8 00 00 00     - mov edx,[rbp+000000B8]
           <AssemblerScript>{ Game   : HellIsOthers_launcher.exe
   Version: 
   Date   : 2023-07-08
-  Author : minat
+  Author : wayden
 
   This script does blah blah blah
 }
