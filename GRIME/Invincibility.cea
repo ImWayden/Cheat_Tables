@@ -2,10 +2,10 @@
   Game   : GRIME
   Version: 
   Date   : 2023-07-11
-  Author : minat
+  Author : Wayden
 
   This script gives invincibilty + InfStam, since i "hooked" it to an persitent update method
-  i reset to original code right after activation since i don't need to have it running 
+  i reset to original code right after activation since i dont need to have it running 
   then i kinda inject in my own code to reverse the modification when deactivated
   you have to activate GetPlayerPointer first for it to work correctly
 

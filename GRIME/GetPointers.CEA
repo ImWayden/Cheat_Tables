@@ -1,7 +1,7 @@
 { Game   : GRIME
   Version: 
   Date   : 2023-07-12
-  Author : minat
+  Author : Wayden
 
   This script Find and set pointers used in other scripts + alloc the memory
   used for all the scripts
