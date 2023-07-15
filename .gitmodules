@@ -1,0 +1,6 @@
+[submodule "CT_GRIME"]
+	path = CT_GRIME
+	url = git@github.com:ImWayden/CT_GRIME.git
+[submodule "CT_Hell_Is_Others"]
+	path = CT_Hell_Is_Others
+	url = git@github.com:ImWayden/CT_Hell_is_others.git
